@@ -2,12 +2,18 @@
 
 /* ── Variables ─────────────────────────────────── */
 :root {
-   --cream: #FAF8F3;
-   --tinted: #F2EDE4;
-   --black: #1C1C1C;
-   --gold: #C9A96E;
-   --gold-light: #E8D5B0;
-   --gray: #6B6B6B;
+   --tomato-jam: #c42b34;
+   --vanilla-custard: #FCE9AB;
+   --princeton-orange: #fc8a2d;
+   --amarillo: #fec248;
+   --blush-rose: #dc4f7c;
+   --bamboo: #c6c954;
+   --rust: #c0350f;
+   --black-bean: #351710;
+   --cobalt: #5868bb;
+   --natural-white: #f6f1e2;
+   --black: #101010;
+
 }
 
 /* ── Reset ─────────────────────────────────────── */
@@ -24,8 +30,8 @@ html {
 }
 
 body {
-   background-color: var(--cream);
-   color: var(--black);
+   background-color: var(--blush-rose);
+   color: var(--blush-rose);
    font-family: 'Cormorant Garamond', serif;
    -webkit-font-smoothing: antialiased;
 }
@@ -33,7 +39,7 @@ body {
 /* ── Page sections (offset for fixed nav) ──────── */
 .page-section {
    padding: 8rem 2rem 6rem;
-   text-align: center;
+   text-align: left;
 }
 
 /* ── Navigation ────────────────────────────────── */
@@ -43,8 +49,8 @@ body {
    left: 0;
    right: 0;
    z-index: 100;
-   background: var(--cream);
-   border-bottom: 1px solid var(--gold-light);
+   background: var(--vanilla-custard);
+   border-bottom: 1px solid var(--vanilla-custard);
    padding: 1.1rem 2.5rem;
 }
 
@@ -58,11 +64,11 @@ body {
 
 .nav-name {
    font-family: 'Josefin Sans', sans-serif;
-   font-weight: 300;
-   letter-spacing: 0.22em;
+   font-weight: 600;
+   letter-spacing: 0.25em;
    text-transform: uppercase;
-   font-size: 0.8rem;
-   color: var(--black);
+   font-size: 1.00rem;
+   color: var(--bamboo);
    text-decoration: none;
 }
 
@@ -78,14 +84,14 @@ body {
    letter-spacing: 0.18em;
    text-transform: uppercase;
    font-size: 0.72rem;
-   color: var(--gray);
+   color: var(--princeton-orange);
    text-decoration: none;
    transition: color 0.2s ease;
 }
 
 .nav-links a:hover,
 .nav-links a.active {
-   color: var(--gold);
+   color: var(--cobalt);
 }
 
 /* ── Hero ──────────────────────────────────────── */
@@ -106,7 +112,7 @@ body {
 .deco-line {
    width: 100%;
    height: 1px;
-   background: linear-gradient(to right, transparent, var(--gold), transparent);
+   background: linear-gradient(to right, transparent, var(--rust), transparent);
    margin: 1.6rem 0;
 }
 
@@ -116,7 +122,7 @@ body {
    letter-spacing: 0.45em;
    text-transform: uppercase;
    font-size: 0.72rem;
-   color: var(--gold);
+   color: var(--rust);
    margin-bottom: 1.2rem;
 }
 
@@ -125,7 +131,7 @@ body {
    font-size: clamp(3.2rem, 9vw, 6.5rem);
    font-weight: 900;
    line-height: 1.04;
-   color: var(--black);
+   color: var(--blush-rose);
    letter-spacing: -0.01em;
 }
 
@@ -135,7 +141,7 @@ body {
    letter-spacing: 0.32em;
    text-transform: uppercase;
    font-size: 0.8rem;
-   color: var(--gray);
+   color: var(--bamboo);
    margin-top: 1.4rem;
 }
 
@@ -145,7 +151,7 @@ body {
 }
 
 .section--tinted {
-   background-color: var(--tinted);
+   background-color: var(--blush-rose);
 }
 
 .section-inner {
@@ -160,7 +166,7 @@ body {
    letter-spacing: 0.45em;
    text-transform: uppercase;
    font-size: 0.68rem;
-   color: var(--gold);
+   color: var(--black-bean);
    margin-bottom: 0.9rem;
 }
 
@@ -175,11 +181,11 @@ body {
 .deco-divider span:not(.deco-diamond) {
    flex: 1;
    height: 1px;
-   background: var(--gold-light);
+   background: var(--amarillo);
 }
 
 .deco-diamond {
-   color: var(--gold);
+   color: var(--princeton-orange);
    font-size: 0.55rem;
 }
 
@@ -187,7 +193,7 @@ body {
    font-family: 'Playfair Display', serif;
    font-size: clamp(2rem, 5vw, 3.2rem);
    font-weight: 700;
-   color: var(--black);
+   color: var(--tomato-jam);
    margin-bottom: 1.8rem;
    line-height: 1.1;
 }
@@ -197,7 +203,7 @@ body {
    font-size: 1.2rem;
    font-weight: 400;
    line-height: 1.85;
-   color: var(--gray);
+   color: var(--black);
    max-width: 580px;
    margin: 0 auto;
 }
@@ -212,14 +218,14 @@ body {
 }
 
 .work-card {
-   border: 1px solid var(--gold-light);
+   border: 1px solid var(--cobalt);
    padding: 2rem 1.75rem;
-   background: var(--cream);
+   background: var(--amarillo);
    transition: border-color 0.25s ease, transform 0.25s ease;
 }
 
 .work-card:hover {
-   border-color: var(--gold);
+   border-color: var(--amarillo);
    transform: translateY(-4px);
 }
 
@@ -229,7 +235,7 @@ body {
    letter-spacing: 0.22em;
    text-transform: uppercase;
    font-size: 0.62rem;
-   color: var(--gold);
+   color: var(--bamboo);
    margin-bottom: 0.8rem;
 }
 
@@ -237,7 +243,7 @@ body {
    font-family: 'Playfair Display', serif;
    font-size: 1.25rem;
    font-weight: 700;
-   color: var(--black);
+   color: var(--tomato-jam);
    margin-bottom: 0.8rem;
    line-height: 1.3;
 }
@@ -245,7 +251,7 @@ body {
 .work-card-desc {
    font-family: 'Cormorant Garamond', serif;
    font-size: 1rem;
-   color: var(--gray);
+   color: var(--black);
    line-height: 1.75;
    margin-bottom: 1.3rem;
 }
@@ -256,7 +262,7 @@ body {
    font-size: 0.72rem;
    letter-spacing: 0.18em;
    text-transform: uppercase;
-   color: var(--gold);
+   color: var(--blush-rose);
    text-decoration: none;
    transition: opacity 0.2s ease;
 }
@@ -273,15 +279,15 @@ body {
    font-weight: 300;
    letter-spacing: 0.18em;
    font-size: 0.88rem;
-   color: var(--black);
+   color: var(--black-bean);
    text-decoration: none;
-   border-bottom: 1px solid var(--gold);
+   border-bottom: 1px solid var(--vanilla-custard);
    padding-bottom: 3px;
    transition: color 0.2s ease;
 }
 
 .contact-link:hover {
-   color: var(--gold);
+   color: var(--rust);
 }
 
 /* ── Footer ────────────────────────────────────── */
@@ -297,21 +303,21 @@ body {
 .footer-contact {
    font-family: 'Cormorant Garamond', serif;
    font-size: 1rem;
-   color: var(--gray);
+   color: var(--amarillo);
    line-height: 1.8;
    margin-bottom: 0.75rem;
 }
 
 .footer-contact a {
-   color: var(--gold);
+   color: var(--bamboo);
    text-decoration: none;
-   border-bottom: 1px solid var(--gold-light);
+   border-bottom: 1px solid var(--rust);
    padding-bottom: 1px;
    transition: color 0.2s;
 }
 
 .footer-contact a:hover {
-   color: var(--black);
+   color: var(--cobalt);
 }
 
 .footer-copy {
@@ -319,7 +325,7 @@ body {
    font-weight: 300;
    letter-spacing: 0.25em;
    font-size: 0.68rem;
-   color: var(--gray);
+   color: var(--black);
    text-transform: uppercase;
 }
 
