@@ -1,18 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Cormorant+Garamond:wght@300;400;500&family=Josefin+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap');
+
 
 /* ── Variables ─────────────────────────────────── */
 :root {
-   --tomato-jam: #c42b34;
-   --vanilla-custard: #FCE9AB;
-   --princeton-orange: #fc8a2d;
-   --amarillo: #fec248;
-   --blush-rose: #dc4f7c;
-   --bamboo: #c6c954;
-   --rust: #c0350f;
-   --black-bean: #351710;
-   --cobalt: #5868bb;
-   --natural-white: #f6f1e2;
-   --black: #101010;
+
+   --black: #000000;
+   --white: #ffffff;
+   --salmon: #FA8072;
+
 
 }
 
@@ -30,8 +26,8 @@ html {
 }
 
 body {
-   background-color: var(--vanilla-custard);
-   color: var(--blush-rose);
+   background-color: var(--princeton-orange);
+   color: var(--black-bean);
    font-family: 'Cormorant Garamond', serif;
    -webkit-font-smoothing: antialiased;
 }
@@ -39,7 +35,7 @@ body {
 /* ── Page sections (offset for fixed nav) ──────── */
 .page-section {
    padding: 8rem 2rem 6rem;
-   text-align: left;
+   text-align: center;
 }
 
 /* ── Navigation ────────────────────────────────── */
@@ -48,14 +44,13 @@ body {
    top: 0;
    left: 0;
    right: 0;
-   z-index: 100;
-   background: var(--vanilla-custard);
-   border-bottom: 1px solid var(--vanilla-custard);
-   padding: 1.1rem 2.5rem;
+   z-index: 500;
+   background: var(--white);
+   padding: .5rem 1.5rem;
 }
 
 .nav-inner {
-   max-width: 960px;
+   max-width: 12500px;
    margin: 0 auto;
    display: flex;
    justify-content: space-between;
@@ -64,34 +59,36 @@ body {
 
 .nav-name {
    font-family: 'Josefin Sans', sans-serif;
-   font-weight: 600;
-   letter-spacing: 0.25em;
+   font-weight: 900;
+   letter-spacing: 0.050em;
    text-transform: uppercase;
-   font-size: 1.00rem;
-   color: var(--bamboo);
+   font-size: rem;
+   color: var(--black);
    text-decoration: none;
+   transition: color 0.2s ease;
 }
 
 .nav-links {
    list-style: none;
    display: flex;
-   gap: 2.5rem;
+   gap: 1.55rem;
 }
 
 .nav-links a {
    font-family: 'Josefin Sans', sans-serif;
-   font-weight: 300;
-   letter-spacing: 0.18em;
+   font-weight: 900;
+   letter-spacing: 0.050em;
    text-transform: uppercase;
-   font-size: 0.72rem;
-   color: var(--princeton-orange);
+   font-size: rem;
+   color: var(--black);
    text-decoration: none;
    transition: color 0.2s ease;
 }
 
+.nav-name:hover,
 .nav-links a:hover,
-.nav-links a.active {
-   color: var(--cobalt);
+.nav-links a:active {
+   color: var(--salmon);
 }
 
 /* ── Hero ──────────────────────────────────────── */
@@ -101,68 +98,54 @@ body {
    align-items: center;
    justify-content: center;
    text-align: center;
-   padding: 7rem 2rem 5rem;
+   padding: 8rem 2rem 5rem;
 }
 
 .hero-inner {
-   max-width: 680px;
+   max-width: 1000px;
    width: 100%;
 }
 
-.deco-line {
-   width: 100%;
-   height: 1px;
-   background: linear-gradient(to right, transparent, var(--rust), transparent);
-   margin: 1.6rem 0;
-}
+
 
 .hero-eyebrow {
    font-family: 'Josefin Sans', sans-serif;
-   font-weight: 300;
-   letter-spacing: 0.45em;
+   font-weight: 450;
+   letter-spacing: .075em;
    text-transform: uppercase;
-   font-size: 0.72rem;
-   color: var(--rust);
-   margin-bottom: 1.2rem;
+   font-size: 1.25rem;
+   color: var(--black);
 }
 
 .hero-title {
-   font-family: 'Playfair Display', serif;
-   font-size: clamp(3.2rem, 9vw, 6.5rem);
+   font-family: 'Josefin Sans', sans-serif;
+   font-size: clamp(rem, 12vw, 9rem);
    font-weight: 900;
-   line-height: 1.04;
-   color: var(--blush-rose);
+   font-style: bold;
+   text-transform: uppercase;
+   line-height: .85;
+   color: var(--salmon);
    letter-spacing: -0.01em;
+   margin-top: .55rem;
+   margin-bottom: 0%
 }
 
 .hero-subtitle {
    font-family: 'Josefin Sans', sans-serif;
-   font-weight: 300;
-   letter-spacing: 0.32em;
+   font-weight: 450;
+   letter-spacing: 0.065em;
    text-transform: uppercase;
-   font-size: 0.8rem;
-   color: var(--bamboo);
-   margin-top: 1.4rem;
+   font-size: 1.25rem;
+   color: var(--black);
+   margin-top: .35rem;
 }
 
 /* ── Sections ──────────────────────────────────── */
-.section {
-   padding: 6rem 2rem;
-}
 
-.section--tinted {
-   background-color: var(--blush-rose);
-}
-
-.section-inner {
-   max-width: 960px;
-   margin: 0 auto;
-   text-align: center;
-}
 
 .section-label {
    font-family: 'Josefin Sans', sans-serif;
-   font-weight: 300;
+   font-weight: 1000;
    letter-spacing: 0.45em;
    text-transform: uppercase;
    font-size: 0.68rem;
@@ -175,24 +158,24 @@ body {
    align-items: center;
    gap: 1rem;
    margin: 0 auto 2.2rem;
-   max-width: 280px;
+   max-width: 500px;
 }
 
 .deco-divider span:not(.deco-diamond) {
    flex: 1;
-   height: 1px;
-   background: var(--amarillo);
+   height: .85px;
+   background: var(--cobalt);
 }
 
 .deco-diamond {
-   color: var(--princeton-orange);
-   font-size: 0.55rem;
+   color: var(--blush-rose);
+   font-size: 2rem;
 }
 
 .section-title {
    font-family: 'Playfair Display', serif;
    font-size: clamp(2rem, 5vw, 3.2rem);
-   font-weight: 700;
+   font-weight: 1000;
    color: var(--tomato-jam);
    margin-bottom: 1.8rem;
    line-height: 1.1;
@@ -203,8 +186,8 @@ body {
    font-size: 1.2rem;
    font-weight: 400;
    line-height: 1.85;
-   color: var(--black);
-   max-width: 580px;
+   color: var(--black-bean);
+   max-width: 850px;
    margin: 0 auto;
 }
 
@@ -364,7 +347,7 @@ body {
 }
 
 .modal {
-   background: var(--cream);
+   background: var(--princeton-orange);
    max-width: 480px;
    width: 100%;
    padding: 2.5rem;
