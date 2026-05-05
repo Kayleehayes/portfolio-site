@@ -21,6 +21,9 @@ function Home() {
                </div>
                <h2 className="section-title">About Me</h2>
                <p className="body-text">
+
+                  but fist let me tell ya::: Wesley is so adorable!!<br /><br />
+
                   A 23-year-old small town girl from Kerrville, TX — with very big dreams and an
                   incredible eye for aesthetic. Poynter/ACES certified copy editor and writer with over
                   five years of undergraduate study at Baylor University. Beyond editorial work, Kaylee
