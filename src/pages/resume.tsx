@@ -156,8 +156,7 @@ function Resume() {
             <div className="section-inner">
                <p className="section-label">Resume</p>
                <div className="deco-divider">
-                  <span /><span className="deco-diamond">◆</span><span />
-               </div>
+            </div>
                <h2 className="section-title">Resume</h2>
                <p className="body-text">
                   Interested in working together? Download my resume to learn more

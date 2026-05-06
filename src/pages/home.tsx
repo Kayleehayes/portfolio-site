@@ -17,12 +17,11 @@ function Home() {
             <div className="section-inner">
                <p className="section-label">About</p>
                <div className="deco-divider">
-                  <span /><span className="deco-diamond">◆</span><span />
-               </div>
+            </div>
                <h2 className="section-title">About Me</h2>
                <p className="body-text">
 
-                  but fist let me tell ya::: Wesley is so adorable!!<br /><br />
+                  EXTRA! EXTRA!<br /><br />
 
                   A 23-year-old small town girl from Kerrville, TX — with very big dreams and an
                   incredible eye for aesthetic. Poynter/ACES certified copy editor and writer with over

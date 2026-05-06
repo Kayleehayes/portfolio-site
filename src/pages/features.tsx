@@ -18,9 +18,8 @@ function Features() {
       <section className="page-section">
          <div className="section-inner">
             <p className="section-label">Writing</p>
-            <div className="deco-divider">
-               <span /><span className="deco-diamond">◆</span><span />
-            </div>
+            <div className="deco-divider">        
+         </div>
             <h2 className="section-title">Features</h2>
             <div className="work-grid">
                {features.map((item) => (

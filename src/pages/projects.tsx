@@ -25,8 +25,7 @@ function Projects() {
          <div className="section-inner">
             <p className="section-label">Work</p>
             <div className="deco-divider">
-               <span /><span className="deco-diamond">◆</span><span />
-            </div>
+          </div>
             <h2 className="section-title">Projects</h2>
             <div className="work-grid">
                {projects.map((project) => (

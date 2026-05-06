@@ -19,8 +19,7 @@ function PRVisualMedia() {
          <div className="section-inner">
             <p className="section-label">Media</p>
             <div className="deco-divider">
-               <span /><span className="deco-diamond">◆</span><span />
-            </div>
+         </div>
             <h2 className="section-title">PR + Visual Media</h2>
             <div className="work-grid">
                {prWork.map((item) => (
